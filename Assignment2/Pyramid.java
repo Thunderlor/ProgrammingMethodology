@@ -31,7 +31,8 @@ public class Pyramid extends GraphicsProgram {
 			drawRaw(BRICKS_IN_BASE - i, x, y);
 		}
 	}
-
+	
+	/** Draw a raw with different numbers in different position */
 	private void drawRaw(int num, int x, int y) {
 		for (int i = 0; i < num; i++) {
 			add(new GRect(x + i * BRICK_WIDTH, y, BRICK_WIDTH, BRICK_HEIGHT));
